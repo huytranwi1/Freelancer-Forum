@@ -14,3 +14,9 @@ h1 {
     text-decoration: underline;
     text-align: center;
 }
+
+ul,
+li {
+    color: lightpink;
+    font-size: 20px;
+}

@@ -21,18 +21,15 @@ function main() {
 
     
     const ul = document.createElement("ul");
-
     for (let i = 0; i < users.length; i++) {
     const li = document.createElement("li")
         li.innerHTML= users[i];
         ul.appendChild(li)
-
     }
      root.appendChild(ul)
 
 
  }
-
 
 //call the main function
 main();
