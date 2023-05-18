@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: solid;
+    width: 300px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+
+h1 {
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+}

@@ -1,4 +1,5 @@
-const users = [
+
+    const users = [
     { name: "John", age: 25, occupation: "gardener" },
     { name: "Lenny", age: 51, occupation: "programmer" },
     { name: "Andrew", age: 43, occupation: "teacher" },
@@ -9,27 +10,29 @@ const users = [
     { name: "Robert", age: 72, occupation: "driver" },
 ];
 
+
 function main() {
 
-    const root = document.querySelector("#root");
+     const root = document.querySelector("#root");
 
     const h1 = document.createElement("h1");
     h1.innerText = "FREELANCERS";
-    root.appendChild(h1)
+    root.appendChild(h1);
 
-
-    //const myLi = document.getElementById("myLi")
-    const ul = document.createElement("ul");
     
-        for(let i = 0; i < users.length; i++){
-            const li = document.createElement("li");
-            li.innerText = users[i];
-            ul.appendChild(li);
-        }
-  
-         root.appendChild(ul)
+    const ul = document.createElement("ul");
 
-}
+    for (let i = 0; i < users.length; i++) {
+    const li = document.createElement("li")
+        li.innerHTML= users[i];
+        ul.appendChild(li)
+
+    }
+     root.appendChild(ul)
+
+
+ }
+
 
 //call the main function
 main();
